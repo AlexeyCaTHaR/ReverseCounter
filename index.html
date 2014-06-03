@@ -9,10 +9,12 @@
 	<title>JS Counter</title>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			//init_counter(container,day,month,year,hour,min,sec);
-			init_counter("#countDown",03,08,2014,12,00,00);
-			//week_counter(container,to) to = 1..7;
-			week_counter("#countWeek",7);
+			//init_counter(container,day,month,year,hour,min,sec,style);
+			init_counter("#countDown",03,08,2014,12,00,00,0);
+			init_counter("#countDown2",03,08,2014,12,00,00,1);
+			//week_counter(container,to,style) to = 1..7;
+			week_counter("#countWeek",7,0);
+			week_counter("#countWeek2",7,1);
 		});
 	</script>
 </head>
@@ -20,7 +22,10 @@
 	<h1>AlexeyCaTHaR reverse counter</h1>
 	<h2>Count to time</h2>
 	<div id="countDown"></div><br />
+	<div id="countDown2"></div>
+	<br /><br /><br /><br /><br />
 	<h2>Cout to day every week</h2>
 	<div id="countWeek"></div><br />
+	<div id="countWeek2"></div><br />
 </body>
 </html>

@@ -5,7 +5,7 @@ html, body {
 }
 body {
 	/*background: #3b7e00;*/
-	background-color: #000;
+	background-color: #6f7068;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -87,4 +87,22 @@ body {
 	margin-top: 55px;
 	position: relative;
 	z-index: 2;
+}
+.digit{
+	background: url("../img/flip.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #000000;
+	float: left;
+	font-size: 60px;
+	font-weight: bold;
+	height: 90px;
+	margin-top: 7px;
+	padding: 0 10px 10px;
+}
+.digitText{
+	color: #000000;
+	float: left;
+	margin-left: -105px;
+	margin-top: 95px;
+	text-align: center;
+	width: 100px;
 }
