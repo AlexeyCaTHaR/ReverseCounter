@@ -32,13 +32,13 @@ function week_counter(container,to,h,m,s,style){
 	to = to!=7?to:0;
 	if(day!=to){
 		var tmp = new Date(now.getFullYear(),now.getMonth(),now.getDate(),h,m,s,999);
-		tmp = Math.abs(tmp.valueOf()-now.valueOf());
+		tmp = tmp.valueOf()-now.valueOf();
 		tmp = to>day?(tmp + 86400000*(to-day)):(day!=0?(tmp+(7-day+to)*86400000):(tmp+to*86400000));
 		var end = new Date((tmp+now.valueOf()));
 	}else{
 		var end = new Date(now.getFullYear(),now.getMonth(),now.getDate(),23,59,59,999);
 	}
-	setInterval(function(){
+	//setInterval(function(){
 		set_time(container,end,style);
-	}, 1000);
+	//}, 1000);
 }
